@@ -1,16 +1,58 @@
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+// $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "compass";
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
-@import url(https://fonts.googleapis.com/css?family=Lato:700,600,500,400,300,100);
+@import 'compass/css3/animation';
+
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+// @import url(https://fonts.googleapis.com/css?family=Lato:700,600,500,400,300,100);
 
 // --------- mixin ----------
 @import "./mixin/placeholder";
+
+
+
+.animated{
+  @include animation-name(fade);
+  @include animation-duration(1s);
+  @include animation-iteration-count(1);
+}
+.delay{
+  @include animation-delay(.5s);
+}
+
+@include keyframes (fade) {
+  0%{
+    opacity: 0;
+    // @include translateY(-40px)
+  }
+  100%{
+    opacity: 1 !important;
+    // @include translateY(0px)
+  }
+}
+
+
+
+
 
 @mixin font-family-Raleway( $weight , $size ){
   font-family: 'Raleway', sans-serif;
   font-weight: $weight;
   font-size: $size;
 }
+
+@mixin font-family-Loto( $weight , $size ){
+  font-family: 'Loto', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin font-family-Helvetica( $weight , $size ){
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+
 
 
 .navigation{
@@ -29,16 +71,21 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     border-bottom: 1px solid #ccc;
     @include font-family-Raleway( 100 , 30px );
     padding-bottom: 10px;
-    &:hover{
+    &.nav-select:hover{
 
       .hellword-brand{  @include translateX(0px); opacity: .3; }
       .nav-about{ @include translateX(20px); opacity: 1; }
     }
     .hellword-brand{
+      z-index: 1;
+      a{
+        color: #333;
+        text-decoration: none;
+      }
       cursor: default;
       color: #333;
       @include transition(.2s);
-      @include translateX(45px);
+      @include translateX(80px);
       letter-spacing: 1.2px;
       .h{
          @include font-family-Raleway( 700 , 35px );
@@ -59,7 +106,7 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 
-.body-container{
+.work-container{
   position: relative;
   margin: 50px auto 60px;
   width: 1000px;
@@ -84,15 +131,119 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   }
 }
 
+
+.about-container{
+  position: relative;
+  margin: 50px auto 60px;
+  // width: 80%;
+  width: 1000px;
+  min-height: 300px;
+  // border: 1px solid #000;
+  .resume-section{
+    position: relative;
+    margin: 0 auto;
+    // width: 300px;
+    width: 50%;
+    // border: 1px solid #000;
+    .profile-picture{
+      position: relative;
+      margin: 0 auto 40px;
+      width: 200px;
+      height: 200px;
+      // border-radius: 50%;
+      overflow: hidden;
+      // border: 1px solid #333;
+      background: url(../../images/2.jpg) no-repeat center;
+      background-size: 100% auto;
+    }
+    .profile-info{
+      p{
+        @include font-family-Loto( 100 , 14px );
+        letter-spacing: 1.5px;
+        line-height: 1.8;
+        text-align: justify;
+        color: #333;
+      }
+    }
+    .tab-switcher{
+      position: relative;
+      @include display-flex;
+      margin: 50px auto 50px ;
+      width: 250px;
+      height: 30px;    
+      // border: 1px solid #333;
+      @include font-family-Loto( 100 , 20px );
+      div{
+        @include transition(.2s);
+        color: rgba(51, 51, 51, .5);
+        cursor: pointer;
+        @include font-family-Loto( 100 , 14px );
+        @include flex(1);
+        line-height: 1.8;
+        text-align: center;
+        &.active{
+          color: rgba(51, 51, 51, 1);
+
+        }
+      }
+
+    }
+  }
+}
+
+.feature-container{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 10px;    
+  .tag-box{
+    list-style-type: none;
+    padding: 0;
+    // margin: 0;
+    text-align: center;
+    li{
+      cursor: default;
+      @include transition(.3s);
+      display: inline-block;
+      @include font-family-Loto( 100 , 14px );
+      padding: 5px 10px;  
+      margin: 5px;
+      color: #333;
+      border: 1px solid #333;
+      // background-color: #333;
+      &:hover{
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #333;
+      }
+      &.hidden{
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+
+
 .footer{
   position: relative;
   margin: 0 auto;
   width: 50%;
-  height: 70px;
+  height: 80px;
   border-top: 1px solid #ccc;
   @include display-flex;
+  @include flex-direction(column);
   align-items: center;
   justify-content: center;
+  .footer-copyright{
+    text-align: center;
+    @include font-family-Loto(100 , 12px);
+    color: #333;
+    // border: 1px solid #000;
+    margin: 10px 0 15px;
+
+  }
   .footer-container{
     @include display-flex;
     position: relative;

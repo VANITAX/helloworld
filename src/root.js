@@ -1,13 +1,22 @@
-import { Router, Route, Link , browserHistory} from 'react-router'
+import router , { Router, Route, Link , browserHistory , IndexRoute , Redirect, NoMatch} from 'react-router'
 import './sass/style.scss';
 import React from 'react';
-import { render } from 'react-dom';
-import { Index } from './script/index';
+import { render , Component } from 'react-dom';
+import { Index} from './script/index';
+import { Works } from './script/component/works';
+import { About } from './script/component/about';
 
-render(
+
+const routes = (
+
   <Router history={browserHistory}>
     <Route path="/" component={Index}>
-      <Route path="/about" component={Index}/>
+      <IndexRoute component={ Works } />
+      <Route path="about" component={About}/>
     </Route>
+
   </Router>
-, document.getElementById('root'));
+
+)
+
+render(routes, document.getElementById('root'));
