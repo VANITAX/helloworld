@@ -1,5 +1,5 @@
 {
-  "name": "iiShare",
+  "name": "HelloWorld",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -49,11 +49,12 @@
     "file-loader": "^0.8.5",
     "jquery": "^2.2.3",
     "masonry-layout": "^4.1.0",
-    "react": "^0.14.8",
+    "react": "^0.14.2",
     "react-addons-css-transition-group": "^15.1.0",
     "react-dom": "^0.14.8",
     "react-masonry-component": "^4.0.4",
     "react-router": "^2.4.1",
+    "react-slick": "^0.12.2",
     "react-waypoint": "^2.0.0"
   }
 }

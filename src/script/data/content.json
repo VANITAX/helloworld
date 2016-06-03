@@ -1,4 +1,126 @@
 {
+  "works":[
+    {
+      "project-directory": "homasy",
+      "project-id": "homasy",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg" , "5.jpg" , "6.jpg" ],
+      "project-name": "Homasy",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "http://www.homasy.com/",
+      "link-displayName":"homasy.com"
+    },
+    {
+      "project-directory": "iiShare",
+      "project-id": "iiShare",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg" , "5.jpg" ],
+      "project-name": "iiShare",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "ctbc-1",
+      "project-id": "ctbcculture",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg"],
+      "project-name": "中國信託文教基金會-官方網站",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "http://www.ctbcculture.org/",
+      "link-displayName":"ctbcculture.org"
+    },
+    {
+      "project-directory": "ctbc-2",
+      "project-id": "ctbcfathersday",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg"],
+      "project-name": "中國信託台灣人壽-父親節活動",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "ctbc-3",
+      "project-id": "ctbctravel",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg"],
+      "project-name": "中國信託台灣人壽-旅遊平安險活動",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "citycafe",
+      "project-id": "citycafe",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg", "5.jpg", "6.jpg"],
+      "project-name": "7-ELEVEN CITYCAFE 城市小探索",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "jwed",
+      "project-id": "jwedumpling",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg"],
+      "project-name": "彩饗喫-手工蔬彩養生水餃",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "FET",
+      "project-id": "fetnet",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" ],
+      "project-name": "遠傳電信-有話好好說",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "isa",
+      "project-id": "isabelle",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg" , "2.jpg" , "3.jpg" ],
+      "project-name": "Isabelle 伊莎貝爾 - 中秋禮盒",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "aia",
+      "project-id": "aia",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg","2.jpg"],
+      "project-name": "友邦人壽 - 活動網站",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "",
+      "link-displayName":""
+    },
+    {
+      "project-directory": "tcbc-1",
+      "project-id": "tcbcCCL",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg","2.jpg"],
+      "project-name": "大眾銀行 - 信用貸款試算",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "https://vbank.tcbank.com.tw/Loan/CCLMain",
+      "link-displayName":"tcbank.com.tw/CCLMain"
+    },
+    {
+      "project-directory": "tcbc-2",
+      "project-id": "tcbcHLN",
+      "project-thumb": "thumb.jpg",
+      "project-images":["1.jpg","2.jpg"],
+      "project-name": "大眾銀行 - 房屋貸款試算",
+      "project-description": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息",
+      "project-url": "https://vbank.tcbank.com.tw/Loan/HLNMain",
+      "link-displayName":"vbank.tcbank.com.tw/HLNMain"
+    }
+  ],
   "skills":[
     "HTML",
     "CSS",
@@ -62,5 +184,10 @@
     "Psychology",
     "Physics",
     "Filming"
-  ] 
+  ] ,
+  "experience": [
+    "2013 - 東南科技大學 機械工程系畢業",
+    "2014 - Dramanita 互動多媒體有限公司 - 前端工程師",
+    "2015 - myTreat 買趣樂國際有限公司 - 前端工程師"
+  ]
 }

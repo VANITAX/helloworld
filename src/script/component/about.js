@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
-import { List } from './tag';
+import { Link } from 'react-router';
 import contentData  from '../data/content.json';
 
 export class About extends Component {
@@ -9,17 +8,25 @@ export class About extends Component {
     this.state = {
       currentTab: 'skills',
       skills: contentData.skills,
-      interest: contentData.interest
+      interest: contentData.interest,
+      experience: contentData.experience
     };
   }
   componentDidMount(){}
   render() {
     const target = this.state.currentTab;
-    let display = [];
-    if(this.state.currentTab){
+    let display;
+    let list = [];
+    if(this.state.currentTab && this.state.currentTab !== 'experience'){
       this.state[ target ].map((value , index)=>{
-        display.push( <List key={ value } wait={ index + 1 }>{ value }</List> );
+        list.push( <li key={ value }>{ value }</li> );
       })
+      display = (<ul className="tag-box">{list}</ul>);
+    }else if( this.state.currentTab === 'experience' ) {
+      this.state[ target ].map((value , index)=>{
+        list.push( <li key={ value }>{ value }</li> );
+      })
+      display = (<ul className="experience-list">{list}</ul>);
     }
     return (
       <div className="about-container">
@@ -43,11 +50,11 @@ export class About extends Component {
             <div className={this.state.currentTab === 'skills' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skill</div>
             <span>/</span>
             <div className={this.state.currentTab === 'interest' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'interest' })}}>Interesting</div>
+             <span>/</span>
+            <div className={this.state.currentTab === 'experience' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'experience' })}}>Experience</div>
           </div>
           <div className="feature-container">
-            <ul className="tag-box">
-              {display}
-            </ul>
+            {display}
           </div>
         </div>
       </div>
