@@ -47,7 +47,7 @@ export class About extends Component {
             </p>
           </div>
           <div className="tab-switcher">
-            <div className={this.state.currentTab === 'skills' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skill</div>
+            <div className={this.state.currentTab === 'skills' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skills</div>
             <span>/</span>
             <div className={this.state.currentTab === 'interest' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'interest' })}}>Interesting</div>
              <span>/</span>
