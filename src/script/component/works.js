@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link , Redirect} from 'react-router';
 import Masonry from 'react-masonry-component';
 import Slider from 'react-slick';
 import contentData  from '../data/content.json';
@@ -80,16 +80,25 @@ const Work = class Work extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
-    let displayLink;
+    let displayLink = [];
 
+    if(this.state.projectData['project-description']){
+      displayLink.push(
+        <div>
+          <div className="project-type">Project Description</div>
+          <div className="project-description">{this.state.projectData['project-description']}</div>
+        </div>
+      )
+    }
     if(this.state.projectData['project-url']){
-      displayLink = (
+      displayLink.push(
         <div>
           <div className="project-type">Project Link</div>
           <div className="project-link"><a target="_blank" href={this.state.projectData['project-url']}>{this.state.projectData['link-displayName']}</a></div>
         </div>
       )
     }
+
 
     return (
       <div className="work-container">
@@ -99,10 +108,7 @@ const Work = class Work extends Component {
         <Link to="/" className="back">Back to Index</Link>
         <div className="project-type">Project Name</div>
         <div className="project-name">{this.state.projectData['project-name']}</div>
-        <div className="project-type">Project Description</div>
-        <div className="project-description">
-          {this.state.projectData['project-description']}
-        </div>
+ 
         {displayLink}
       </div>
     );
