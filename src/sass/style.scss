@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css");
 // $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "compass";
 @import 'compass/css3/animation';
@@ -63,8 +64,8 @@
   .header{
     position: relative;
     @include display-flex;
-    align-items: flex-end;
-    justify-content: center;
+    @include align-items(flex-end);
+    @include justify-content(center);
     margin: 0 auto;
     width: 200px;
     height: inherit;
@@ -72,11 +73,22 @@
     @include font-family-Raleway( 100 , 30px );
     padding-bottom: 10px;
     &.nav-select:hover{
-
-      .hellword-brand{  @include translateX(0px); opacity: .3; }
-      .nav-about{ @include translateX(20px); opacity: 1; }
+      .hellworld-brand{  @include translateX(-60px); opacity: .3; }
+      .nav-about{ @include translateX(-60px); opacity: 1; }
+      @media screen and (max-width: 400px) { 
+        .hellworld-brand{ @include translateX(20px); opacity: .3; }
+        .nav-about{ @include translate( -140px , -45px ); opacity: 1; }
+      }
     }
-    .hellword-brand{
+    .nav-box{
+      position: relative;
+      width: 100%;
+      // border: 1px solid #000;
+    }
+    .hellworld-brand{
+      position: relative;
+      display: inline-block;
+      bottom: 0;
       z-index: 1;
       a{
         color: #333;
@@ -85,17 +97,21 @@
       cursor: default;
       color: #333;
       @include transition(.2s);
-      @include translateX(80px);
+      @include translateX(20px);
       letter-spacing: 1.2px;
       .h{
          @include font-family-Raleway( 700 , 35px );
       }
     }
     .nav-about{
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
       @include font-family-Raleway( 100 , 30px );
       @include transition(.2s);
-      @include translateX(-80px);
+      @include translateX(-140px);
       color: #333;
+      display: inline-block;
       opacity: 0;
       a{
         color: #333;
@@ -210,14 +226,13 @@
 .about-container{
   position: relative;
   margin: 50px auto 60px;
-  // width: 80%;
-  width: 1000px;
+  width: 100%;
   min-height: 300px;
-  // border: 1px solid #000;
   .resume-section{
     position: relative;
     margin: 0 auto;
     // width: 300px;
+    @media screen and (max-width: 600px) { width: 90%; }
     width: 50%;
     // border: 1px solid #000;
     .profile-picture{
@@ -329,12 +344,13 @@
   border-top: 1px solid #ccc;
   @include display-flex;
   @include flex-direction(column);
-  align-items: center;
-  justify-content: center;
+  @include align-items(center);
+  @include justify-content(center);
   .footer-copyright{
     text-align: center;
     @include font-family-Loto(100 , 12px);
     color: #333;
+    letter-spacing: 1.05px;
     // border: 1px solid #000;
     margin: 10px 0 15px;
 
@@ -343,7 +359,8 @@
     @include display-flex;
     position: relative;
     width: 200px;
-    height: 20px;
+    height: 50px;
+    margin-bottom: 20px;
     // border: 1px solid #000;
     a{
       color: #333;

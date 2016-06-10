@@ -10,9 +10,10 @@ const Works = class Works extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      data: {}
     };
   }
-
+  componentWillMount(){}
   componentDidMount(){}
   render() {
     let childBlock = [];
@@ -20,7 +21,7 @@ const Works = class Works extends Component {
     contentData.works.map((content)=>{
       childBlock.push(
         <li key={content['project-id']}>
-          <Link to={content['project-id']}>
+          <Link to={'/work/'+content['project-id']}>
             <div className="work-block">
               <img width="250" src={prefix + content['project-directory'] + "/" +content['project-thumb']}/>
             </div>

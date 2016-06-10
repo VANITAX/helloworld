@@ -23,7 +23,6 @@ var reactRoutes = [
 
 
 app.use(helmet());
-// app.disable('x-powered-by');
 app.use(compression());
 app.set('views', __dirname );
 app.engine('html', require('ejs').renderFile);
@@ -34,11 +33,13 @@ app.get(reactRoutes, function(req, res) {
 });
 
 app.use('*', function(req, res) {
-  res.redirect(301, '/');
+  if (req.accepts('html')) {
+    res.redirect(301, '/');
+  }
 });
 
 
-app.listen(8081, function(err) {
+app.listen(80, function(err) {
   process.stdout.write('\u001B[2J\u001B[0;0f');
-  console.log('Listening at http://localhost:8080');
+  console.log('Listening at http://localhost:80');
 });
