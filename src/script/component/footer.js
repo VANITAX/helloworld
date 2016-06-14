@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import googleAnylytics from './ga';
+
 // import Waypoint from 'react-waypoint';
 
 export default class Footer extends Component {

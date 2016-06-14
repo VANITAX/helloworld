@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import contentData  from '../data/content.json';
+import googleAnylytics from './ga';
 
 export class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentTab: 'skills',
+      currentTab: 'experience',
       skills: contentData.skills,
       interest: contentData.interest,
       experience: contentData.experience
@@ -56,11 +57,11 @@ export class About extends Component {
             <span className="special-intro">My word, is to create the best product in the world.</span>
           </div>
           <div className="tab-switcher">
-            <div className={this.state.currentTab === 'skills' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skills</div>
+            <div className={this.state.currentTab === 'skills' ? "skill active" : "skill"} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skills</div>
             <span>/</span>
-            <div className={this.state.currentTab === 'interest' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'interest' })}}>Interesting</div>
-             <span>/</span>
             <div className={this.state.currentTab === 'experience' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'experience' })}}>Experience</div>
+             <span>/</span>
+            <div className={this.state.currentTab === 'interest' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'interest' })}}>Interesting</div>
           </div>
           <div className="feature-container">
             {display}

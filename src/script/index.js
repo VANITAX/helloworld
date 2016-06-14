@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navigation from './component/nav';
 import Footer from './component/footer';
 import Masonry from 'react-masonry-component'
-
+import googleAnylytics from './component/ga';
 
 export class Index extends Component {
   constructor(props) {

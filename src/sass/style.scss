@@ -301,6 +301,9 @@
         @include flex(1);
         line-height: 1.8;
         text-align: center;
+        &.skill{
+          text-indent: 20px;
+        }
         &.active{
           color: rgba(51, 51, 51, 1);
 

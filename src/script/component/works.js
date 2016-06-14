@@ -3,6 +3,8 @@ import { Link , Redirect} from 'react-router';
 import Masonry from 'react-masonry-component';
 import Slider from 'react-slick';
 import contentData  from '../data/content.json';
+import googleAnylytics from './ga';
+
 const prefix = '/public/images/works/';
 
 
