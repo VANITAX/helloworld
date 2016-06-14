@@ -215,6 +215,14 @@
       }
     }
   }
+  .project-tech{
+    @include font-family-Loto( 100 , 14px );
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    min-width: 300px;
+  }
 }
 
 
@@ -247,12 +255,34 @@
       background-size: 100% auto;
     }
     .profile-info{
-      p{
+      &:after{
+        content: '';
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #aaa;
+        @include translateY(25px);
+      }
+      p,.special-intro{
         @include font-family-Loto( 100 , 14px );
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         line-height: 1.8;
         text-align: justify;
         color: #333;
+      }
+      .special{
+        display: block;
+        margin: 30px 0;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #333;
+        @include font-family-Loto( 500 , 16px );
+      }
+      .special-intro{
+        display: block;
+        text-align: center;
       }
     }
     .tab-switcher{
@@ -290,37 +320,44 @@
     list-style-type: none;
     padding: 0;
     text-align: center;  
-    li{
-      // display: inline-block;
-      @include transition(.3s);
-      @include font-family-Loto( 100 , 12px );
-      margin: 5px;
-      // border: 1px solid #333;
+    @include font-family-Loto( 100 , 12px );
+    .experi-title{ 
+      display: block;
+      @include font-family-Loto( 100 , 16px ); 
+      margin: 15px 0 ;
+    }
+    .exp-name{
+      @include font-family-Loto( 100 , 13px ); 
+      margin: 5px 0;
+    }
+    .exp-title{
+      opacity: 0.5;
+      margin: 5px 0;
     }
   } 
-  .tag-box{
-    list-style-type: none;
-    padding: 0;
-    // margin: 0;
-    text-align: center;
-    li{
-      cursor: default;
-      @include transition(.3s);
-      display: inline-block;
-      @include font-family-Loto( 100 , 14px );
-      padding: 5px 10px;  
-      margin: 5px;
-      color: #333;
-      border: 1px solid #333;
-      // background-color: #333;
-      &:hover{
-        color: #fff;
-        border: 1px solid #fff;
-        background-color: #333;
-      }
-      &.hidden{
-        opacity: 0;
-      }
+}
+.tag-box{
+  list-style-type: none;
+  padding: 0;
+  // margin: 0;
+  text-align: center;
+  li{
+    cursor: default;
+    @include transition(.3s);
+    display: inline-block;
+    @include font-family-Loto( 100 , 14px );
+    padding: 5px 10px;  
+    margin: 5px;
+    color: #333;
+    border: 1px solid #333;
+    // background-color: #333;
+    &:hover{
+      color: #fff;
+      border: 1px solid #fff;
+      background-color: #333;
+    }
+    &.hidden{
+      opacity: 0;
     }
   }
 }
@@ -352,7 +389,7 @@
     color: #333;
     letter-spacing: 1.05px;
     // border: 1px solid #000;
-    margin: 10px 0 15px;
+    margin: 10px 0 20px;
 
   }
   .footer-container{
@@ -360,7 +397,7 @@
     position: relative;
     width: 200px;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     // border: 1px solid #000;
     a{
       color: #333;

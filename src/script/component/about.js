@@ -12,8 +12,12 @@ export class About extends Component {
       experience: contentData.experience
     };
   }
+  componentWillMount(){
+    ga('send', 'event', 'Routes', 'About')
+  }
   componentDidMount(){}
   render() {
+    ga('send', 'event', 'About-tab', this.state.currentTab );
     const target = this.state.currentTab;
     let display;
     let list = [];
@@ -23,10 +27,20 @@ export class About extends Component {
       })
       display = (<ul className="tag-box">{list}</ul>);
     }else if( this.state.currentTab === 'experience' ) {
+      let eduExper = [],
+          workExper = [];
       this.state[ target ].map((value , index)=>{
-        list.push( <li key={ value }>{ value }</li> );
+        const temple = (<div key={ value['exp_id'] }><div className="exp-name">{value.title}</div><div className="exp-title">{value.jobTitle}</div></div> )
+        if(value.category === 'Education'){
+          eduExper.push( temple );
+        }else{
+          workExper.push( temple );
+        }
       })
-      display = (<ul className="experience-list">{list}</ul>);
+      display = (<div className="experience-list">
+          <span className="experi-title experi-edu">Education</span>{eduExper}
+          <span className="experi-title experi-work">Work Experience</span>{workExper}
+        </div>);
     }
     return (
       <div className="about-container">
@@ -34,18 +48,12 @@ export class About extends Component {
           <div className="profile-picture"/>
           <div className="profile-info">
             <p>
-              台北市內湖人。
-              興趣廣泛，一有機會便會嘗試任何事情。
-              樂於挑戰，常常喜歡挑一些麻煩事來做。
-              喜歡做事有效率，偶爾會視專案來做一些加速工作的小工具， 
-              不僅可以學習新東西更可以讓專案快速並有效率的完成。
-              喜歡大自然，常與朋友或家人往外走。
-              喜歡攝影，看到美麗的東西很希望可以與其他人分享。 
-              喜歡新技術，偶爾與朋友一起參加社群活動或是逛FWA之類的網站。 
-              喜歡音樂，所以大部分的工作時間都會帶著耳機工作。
-              有時候喜歡吃飽沒事會想推幾個好朋友進寫程式的坑，教他們寫寫code順便複習最初的基礎。
-              對於我來說，所有產品最終都是開發出來給人使用的，所以比起寫出更完美的程式，我更希望是使用者能流暢的操作我所參與開發出來的東西。
+              Hi! I'm Roxy, currently a senior web front-end developer and also interested in Data Science and UI/UX design.
+              I was born in 1990 Aug 15th and graduated from Tungnan University , Taiwan ( 2013 ), major Mechanical Engineering.
+              I really enjoy in Programming and UI/UX Design because coding is a perfect tool in this century to solve the real problems in the world and design can create uncountable possibilities on products that people love and users can use them smoothly.
             </p>
+            <span className="special">”To me, is to people’s heart“</span>
+            <span className="special-intro">My word, is to create the best product in the world.</span>
           </div>
           <div className="tab-switcher">
             <div className={this.state.currentTab === 'skills' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skills</div>

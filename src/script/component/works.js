@@ -13,7 +13,6 @@ const Works = class Works extends Component {
       data: {}
     };
   }
-  componentWillMount(){}
   componentDidMount(){}
   render() {
     let childBlock = [];
@@ -53,6 +52,7 @@ const Work = class Work extends Component {
   }
   componentWillMount(){
     const { params } = this.props;
+    ga('send', 'event', 'Routes', 'Work' , params.id  )
     contentData.works.map((content)=>{
       if(content['project-id'] === params.id ) { 
         this.setState({ 
@@ -85,7 +85,7 @@ const Work = class Work extends Component {
 
     if(this.state.projectData['project-description']){
       displayLink.push(
-        <div>
+        <div key='project-description'>
           <div className="project-type">Project Description</div>
           <div className="project-description">{this.state.projectData['project-description']}</div>
         </div>
@@ -93,9 +93,21 @@ const Work = class Work extends Component {
     }
     if(this.state.projectData['project-url']){
       displayLink.push(
-        <div>
+        <div key='project-url'>
           <div className="project-type">Project Link</div>
-          <div className="project-link"><a target="_blank" href={this.state.projectData['project-url']}>{this.state.projectData['link-displayName']}</a></div>
+          <div className="project-link"><a onClick={()=>{ ga('send', 'event', 'Project-URL', this.state.projectData['link-displayName'])}} target="_blank" href={this.state.projectData['project-url']}>{this.state.projectData['link-displayName']}</a></div>
+        </div>
+      )
+    }
+    if(this.state.projectData['technology']){
+      let techBlock = [];
+      this.state.projectData['technology'].map((content)=>{
+        techBlock.push(<li key={content}> {content} </li>)
+      })
+      displayLink.push(
+        <div key='project-technology'>
+          <div className="project-type">Front-end-Technology</div>
+          <div className="project-tech"><ul className="tag-box">{techBlock}</ul></div>
         </div>
       )
     }
@@ -109,8 +121,8 @@ const Work = class Work extends Component {
         <Link to="/" className="back">Back to Index</Link>
         <div className="project-type">Project Name</div>
         <div className="project-name">{this.state.projectData['project-name']}</div>
- 
         {displayLink}
+
       </div>
     );
   }

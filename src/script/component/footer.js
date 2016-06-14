@@ -12,10 +12,10 @@ export default class Footer extends Component {
       <div className="footer">
         <div className="footer-copyright">Copyright © 2016 all rights reserved</div>
         <div className="footer-container">
-          <a href="//github.com/VANITAX" target="_blank" className="fa fa-github"/>
-          <a href="//facebook.com/RoxyVanceChen" target="_blank" className="fa fa-facebook"/>
-          <a href="//pinterest.com/roxyvancechen/" target="_blank" className="fa fa-pinterest"/>
-          <a href="//500px.com/roxychen" target="_blank" className="fa fa-500px"/>
+          <a href="//github.com/VANITAX" target="_blank" className="fa fa-github" onClick={()=>{ ga('send', 'event', 'Link', 'Github')}}/>
+          <a href="//facebook.com/RoxyVanceChen" target="_blank" className="fa fa-facebook" onClick={()=>{ ga('send', 'event', 'Link', 'Facebook')}}/>
+          <a href="//pinterest.com/roxyvancechen/" target="_blank" className="fa fa-pinterest" onClick={()=>{ ga('send', 'event', 'Link', 'Pinterest')}}/>
+          <a href="//500px.com/roxychen" target="_blank" className="fa fa-500px" onClick={()=>{ ga('send', 'event', 'Link', '500PX')}}/>
         </div>
       </div>
     );

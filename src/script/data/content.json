@@ -8,7 +8,8 @@
       "project-name": "Homasy",
       "project-description": "",
       "project-url": "http://www.homasy.com/",
-      "link-displayName":"homasy.com"
+      "link-displayName":"homasy.com",
+      "technology":["HTML5","CSS3","D3.js","React.js","Sass","Haml","Laravel blade","Gulp","Coffee","Javascript","ES2015","jQuery","Ajax","Webpack","Babel.js"]
     },
     {
       "project-directory": "iishare",
@@ -18,7 +19,9 @@
       "project-name": "iiShare",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","React.js","ES2015","Webpack","Babel.js"]
+
     },
     {
       "project-directory": "ctbc-1",
@@ -29,6 +32,7 @@
       "project-description": "",
       "project-url": "http://www.ctbcculture.org/",
       "link-displayName":"ctbcculture.org",
+      "technology":["HTML5","CSS3","Handlebar.js","jQuery","Gulp","Sass","Haml","Ajax","Bootstrap","Facebook API"],
       "note": "這次專案主要目的是更新中國信託文教基金會的官方網站由於會持續更新大量的活動，因此我們也把首頁展示活動文章的部分使用瀑布流的方式呈現，讓使用者可以直接看到最新活動或是文教基金會的最新消息"
     },
     {
@@ -39,7 +43,8 @@
       "project-name": "中國信託台灣人壽-父親節活動",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery","Gulp","Sass","Jade","Ajax","Bootstrap","InternetExplorer8 Support","Facebook API"]
     },
     {
       "project-directory": "ctbc-3",
@@ -49,7 +54,8 @@
       "project-name": "中國信託台灣人壽-旅遊平安險活動",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery","Gulp","Sass","Jade","Ajax","Bootstrap","InternetExplorer8 Support"]
     },
     {
       "project-directory": "citycafe",
@@ -59,7 +65,8 @@
       "project-name": "7-ELEVEN CITYCAFE 城市小探索",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery","Gulp","Sass","Jade","Ajax","Canvas","Javascript","Facebook API","Google Map"]
     },
     {
       "project-directory": "jwed",
@@ -69,17 +76,19 @@
       "project-name": "彩饗喫-手工蔬彩養生水餃",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery"]
     },
     {
       "project-directory": "FET",
       "project-id": "fetnet",
       "project-thumb": "thumb.jpg",
       "project-images":["1.jpg" , "2.jpg" , "3.jpg" ],
-      "project-name": "遠傳電信-有話好好說",
+      "project-name": "遠傳電信-有話好好說活動",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery","Gulp","Sass","Jade","Ajax","Canvas","Javascript","InternetExplorer8 Support","Facebook API"]
     },
     {
       "project-directory": "isa",
@@ -89,7 +98,9 @@
       "project-name": "Isabelle 伊莎貝爾 - 中秋禮盒",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery","Gulp","Sass","Jade","Ajax","InternetExplorer8 Support"]
+
     },
     {
       "project-directory": "aia",
@@ -99,7 +110,8 @@
       "project-name": "友邦人壽 - 活動網站",
       "project-description": "",
       "project-url": "",
-      "link-displayName":""
+      "link-displayName":"",
+      "technology":["HTML5","CSS3","jQuery","InternetExplorer8 Support"]
     },
     {
       "project-directory": "tcbc-1",
@@ -109,7 +121,8 @@
       "project-name": "大眾銀行 - 信用貸款試算",
       "project-description": "",
       "project-url": "https://vbank.tcbank.com.tw/Loan/CCLMain",
-      "link-displayName":"tcbank.com.tw/CCLMain"
+      "link-displayName":"tcbank.com.tw/CCLMain",
+      "technology":["HTML5","CSS3","jQuery","Canvas","InternetExplorer8 Support"]
     },
     {
       "project-directory": "tcbc-2",
@@ -119,7 +132,8 @@
       "project-name": "大眾銀行 - 房屋貸款試算",
       "project-description": "",
       "project-url": "https://vbank.tcbank.com.tw/Loan/HLNMain",
-      "link-displayName":"vbank.tcbank.com.tw/HLNMain"
+      "link-displayName":"vbank.tcbank.com.tw/HLNMain",
+      "technology":["HTML5","CSS3","jQuery","InternetExplorer8 Support"]
     }
   ],
   "skills":[
@@ -145,13 +159,14 @@
     "MongoDB",
     "Jade",
     "Sass",
+    "Haml",
     "Bootstrap",
     "Compass",
     "Foundation",
     "Google SEO",
     "AWS",
     "Digital Ocean",
-    "InternetExplorer8 Hack",
+    "InternetExplorer8 Support",
     "Git",
     "Facebook API",
     "Google Apps",
@@ -200,8 +215,23 @@
     "Filming"
   ] ,
   "experience": [
-    "2013 - 東南科技大學 機械工程系畢業",
-    "2014 - Dramanita 互動多媒體有限公司 - 前端工程師",
-    "2015 - myTreat 買趣樂國際有限公司 - 前端工程師"
+    { 
+      "exp_id":"edu_1",
+      "category":"Education",
+      "title":"Tungnan University , Taiwan ( 2009 - 2013 )",
+      "jobTitle":"Bachelor , Mechanical Engineering"
+    },
+    {
+      "exp_id":"work_1",
+      "category":"Work",
+      "title":"Dramanita Inc.( 2014 - 2015 Sep. )",
+      "jobTitle":"Front-End Website Developer"
+    },
+    {
+      "exp_id":"worl_2",
+      "category":"Work",
+      "title":"myTreat Ltd.( 2015 - present )",
+      "jobTitle":"Front-End Website Developer"
+    }
   ]
 }
