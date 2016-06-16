@@ -39,7 +39,7 @@ app.use('*', function(req, res) {
 });
 
 
-app.listen(80, function(err) {
+app.listen(3000, function(err) {
   process.stdout.write('\u001B[2J\u001B[0;0f');
-  console.log('Listening at http://localhost:80');
+  console.log('Listening at http://localhost:3000');
 });

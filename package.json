@@ -47,6 +47,7 @@
     "bootstrap-sass": "^3.3.6",
     "compass-mixins": "^0.12.7",
     "compression": "^1.6.2",
+    "connect": "^3.4.1",
     "file-loader": "^0.8.5",
     "jquery": "^2.2.3",
     "masonry-layout": "^4.1.0",
@@ -56,6 +57,8 @@
     "react-masonry-component": "^4.0.4",
     "react-router": "^2.4.1",
     "react-slick": "^0.12.2",
-    "react-waypoint": "^2.0.0"
+    "react-waypoint": "^2.0.0",
+    "serve-static": "^1.11.1",
+    "vhost": "^3.0.2"
   }
 }
