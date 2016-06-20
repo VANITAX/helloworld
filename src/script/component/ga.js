@@ -1,8 +1,19 @@
+let TRACKING_NUMBER = 'UA-69363541-2';
+/*
+-------------------------------
+env detecting
+-------------------------------
+ */
+if (window.location.hostname !== "roxychen.me") {
+  TRACKING_NUMBER = '';
+}
+
 /*
 -------------------------------
 Google Anylytice Tracking Code
 -------------------------------
  */
+
 export default (
   function(i, s, o, g, r, a, m){
     i.GoogleAnalyticsObject = r;
@@ -15,7 +26,8 @@ export default (
     a.src = g;
     m.parentNode.insertBefore(a, m);
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-69363541-2' , 'auto');
+  (TRACKING_NUMBER.length === 0) && (console.log('%c tracking number is unavailable' ,  'color: #DA3300; font-size: 16px;'))
+  ga('create', TRACKING_NUMBER , 'auto');
   ga('require', 'displayfeatures');
   ga('require', 'linkid', 'linkid.js');
   ga('send', 'pageview');

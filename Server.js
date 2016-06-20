@@ -3,6 +3,7 @@ var express = require('express');
 var helmet = require('helmet');
 var compression = require('compression');
 var app = express();
+var port = 2001;
 
 var reactRoutes = [
   "/",
@@ -39,7 +40,7 @@ app.use('*', function(req, res) {
 });
 
 
-app.listen(3000, function(err) {
+app.listen(port, function(err) {
   process.stdout.write('\u001B[2J\u001B[0;0f');
-  console.log('Listening at http://localhost:3000');
+  console.log('Listening at http://localhost:'+ port);
 });

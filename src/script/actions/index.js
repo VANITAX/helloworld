@@ -1,0 +1,8 @@
+import fetch from 'isomorphic-fetch';
+
+export {
+  'REQUEST_POSTS' : 'REQUEST_POSTS',
+  'RECEIVE_POSTS' : 'RECEIVE_POSTS',
+  'SELECT_REDDIT' : 'SELECT_REDDIT',
+  'INVALIDATE_REDDIT' : 'INVALIDATE_REDDIT'
+}
