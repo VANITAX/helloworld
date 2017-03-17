@@ -15,9 +15,9 @@ import { About } from './script/component/about';
 const routes = (
     <Router history={browserHistory}>
       <Route path="/" component={Index}>
-        <IndexRoute component={ Works } />
-        <Route path="about" component={About}/>
-        <Route path="work/:id" component={Work}/>
+        <IndexRoute component={About} />
+        {/* <Route path="about" component={About}/> */}
+        {/* <Route path="work/:id" component={Work}/> */}
       </Route>
     </Router>
 )

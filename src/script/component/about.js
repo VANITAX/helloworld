@@ -31,7 +31,7 @@ export class About extends Component {
       let eduExper = [],
           workExper = [];
       this.state[ target ].map((value , index)=>{
-        const temple = (<div key={ value['exp_id'] }><div className="exp-name">{value.title}</div><div className="exp-title">{value.jobTitle}</div></div> )
+        const temple = (<div className="exp-group" key={ value['exp_id'] }><div className="exp-name">{value.title}</div><div className="exp-title">{value.jobTitle}</div></div> )
         if(value.category === 'Education'){
           eduExper.push( temple );
         }else{
@@ -53,16 +53,21 @@ export class About extends Component {
               I was born in 1990 Aug 15th and graduated from Tungnan University , Taiwan ( 2013 ), major Mechanical Engineering.
               I really enjoy in Programming and UI/UX Design because coding is a perfect tool in this century to solve the real problems in the world and design can create uncountable possibilities on products that people love and users can use them smoothly.
             </p>
-            <span className="special">”To me, is to people’s heart“</span>
-            <span className="special-intro">My word, is to create the best product in the world.</span>
+            {/* <span className="special">Contact Info</span>
+            <p>
+              roxychen.work@gmail.com
+            </p> */}
+
+            {/* <span className="special">”To me, is to people’s heart“</span> */}
+            {/* <span className="special-intro">My word, is to create the best product in the world.</span> */}
           </div>
-          <div className="tab-switcher">
+          {/* <div className="tab-switcher">
             <div className={this.state.currentTab === 'skills' ? "skill active" : "skill"} onClick={()=>{this.setState({currentTab: 'skills' })}}>Skills</div>
             <span>/</span>
             <div className={this.state.currentTab === 'experience' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'experience' })}}>Experience</div>
              <span>/</span>
             <div className={this.state.currentTab === 'interest' ? "active" : ""} onClick={()=>{this.setState({currentTab: 'interest' })}}>Interesting</div>
-          </div>
+          </div> */}
           <div className="feature-container">
             {display}
           </div>

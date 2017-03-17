@@ -101,39 +101,6 @@
       "link-displayName":"",
       "technology":["HTML5","CSS3","jQuery","Gulp","Sass","Jade","Ajax","InternetExplorer8 Support"]
 
-    },
-    {
-      "project-directory": "aia",
-      "project-id": "aia",
-      "project-thumb": "thumb.jpg",
-      "project-images":["1.jpg","2.jpg"],
-      "project-name": "友邦人壽 - 活動網站",
-      "project-description": "",
-      "project-url": "",
-      "link-displayName":"",
-      "technology":["HTML5","CSS3","jQuery","InternetExplorer8 Support"]
-    },
-    {
-      "project-directory": "tcbc-1",
-      "project-id": "tcbcCCL",
-      "project-thumb": "thumb.jpg",
-      "project-images":["1.jpg","2.jpg"],
-      "project-name": "大眾銀行 - 信用貸款試算",
-      "project-description": "",
-      "project-url": "https://vbank.tcbank.com.tw/Loan/CCLMain",
-      "link-displayName":"tcbank.com.tw/CCLMain",
-      "technology":["HTML5","CSS3","jQuery","Canvas","InternetExplorer8 Support"]
-    },
-    {
-      "project-directory": "tcbc-2",
-      "project-id": "tcbcHLN",
-      "project-thumb": "thumb.jpg",
-      "project-images":["1.jpg","2.jpg"],
-      "project-name": "大眾銀行 - 房屋貸款試算",
-      "project-description": "",
-      "project-url": "https://vbank.tcbank.com.tw/Loan/HLNMain",
-      "link-displayName":"vbank.tcbank.com.tw/HLNMain",
-      "technology":["HTML5","CSS3","jQuery","InternetExplorer8 Support"]
     }
   ],
   "skills":[
@@ -195,7 +162,7 @@
     "3Ds Solidworks",
     "3Ds CATiA"
   ],
-  "interest": [    
+  "interest": [
     "Objective-c",
     "Swift",
     "Windows",
@@ -228,17 +195,17 @@
     "Filming"
   ] ,
   "experience": [
-    { 
+    {
       "exp_id":"edu_1",
       "category":"Education",
       "title":"Tungnan University , Taiwan ( 2009 - 2013 )",
       "jobTitle":"Bachelor , Mechanical Engineering"
     },
     {
-      "exp_id":"work_1",
+      "exp_id":"worl_1",
       "category":"Work",
-      "title":"Dramanita Inc.( 2014 - 2015 Sep. )",
-      "jobTitle":"web Front-end Developer"
+      "title":"Giftpack Inc.( 2016 - present )",
+      "jobTitle":"web Front-end Developer(Remote Work)"
     },
     {
       "exp_id":"worl_2",
@@ -247,10 +214,10 @@
       "jobTitle":"web Front-end Developer(Remote Work)"
     },
     {
-      "exp_id":"worl_3",
+      "exp_id":"work_3",
       "category":"Work",
-      "title":"Giftpack Inc.( 2016 - present )",
-      "jobTitle":"web Front-end Developer(Remote Work)"
+      "title":"Dramanita Inc.( 2014 - 2015 Sep. )",
+      "jobTitle":"web Front-end Developer"
     }
   ]
 }

@@ -16,8 +16,8 @@ export default class Nav extends Component {
       <div className="navigation">
         <div className={ window.location.pathname !== '/about' ? "header nav-select" : "header" }>
           <div className="nav-box">
-            <div className="hellworld-brand"><Link to="/"><span className="h">H</span>elloworld</Link></div>
-            <div className="nav-about"><Link to="/about">ROXYCHEN</Link></div>
+            <div className="hellworld-brand"><span className="h">H</span>elloworld</div>
+            <div className="nav-about">ROXYCHEN</div>
           </div>
         </div>
       </div>
