@@ -36,7 +36,7 @@
     "raw-loader": "^0.5.1",
     "rimraf": "^2.4.3",
     "sass-loader": "^4.1.1",
-    "style-loader": "^0.13.1",
+    "style-loader": "^0.23.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
